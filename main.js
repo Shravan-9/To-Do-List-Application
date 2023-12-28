@@ -64,3 +64,16 @@ window.addEventListener('load', () => {
     });
 });
 
+// Add this code to the existing JavaScript
+document.addEventListener('DOMContentLoaded', () => {
+    const list_el = document.querySelector("#tasks");
+
+    list_el.addEventListener('click', (e) => {
+        const clickedTask = e.target.closest('.task');
+        if (clickedTask) {
+            clickedTask.classList.toggle('completed');
+        }
+    });
+});
+
+

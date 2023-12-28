@@ -164,3 +164,49 @@ main{
     color: rgb(0, 0, 0);
     background-color: var(--pink); 
 }
+/* Add this style for the white line */
+#tasks .task::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    z-index: 8; /* Place it behind the task content */
+}
+
+/* Add this style for the straight line effect when completed */
+#tasks .task.completed::before {
+    transform: scaleX(1);
+}
+
+/* Update the existing task styles */
+#tasks .task {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e997ce;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    overflow: hidden; /* Add this line to hide the white line initially */
+}
+
+/* Update the text color styles */
+#tasks .task .content .text {
+    color: #000000;
+    font-size: 1.75rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+/* Remove the hover styles from .task .content .text */
+#tasks .task .content .text:hover {
+    color: pink;
+}
