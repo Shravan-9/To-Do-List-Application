@@ -23,12 +23,13 @@ This To-Do List application provides a simple and user-friendly way to organize 
 - **Clean Code**: This project follows a structured and readable code style, making it easy to understand and maintain.
 - **Git Workflow**: Utilized branching to develop and merge new features, showcasing best practices in version control.
 
-## 📸 Demo
-![To-Do List Screenshot](https://via.placeholder.com/800x400.png)  
-*(Replace this link with an actual screenshot of your application)*
-
 ## 🧑‍💻 How to Run
 1. Clone the repository:
    ```bash
    git clone https://github.com/Shravan-9/your-repo-name.git
 
+2. Navigate to the project directory:
+ ```bash
+ cd your-repo-name
+
+3. Open the index.html file in your browser:
